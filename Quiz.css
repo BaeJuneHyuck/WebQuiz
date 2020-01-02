@@ -1,0 +1,95 @@
+body		{
+    font-family: arial, sans-serif;
+    background-image: url("./source/background.jpg");
+}
+
+button{
+  font-size: 30px;
+}
+
+#myProgress {
+    width: 98%;
+    background-color: grey;
+    border: solid 5px black;
+}
+#myBar {
+    width: 0%;
+    height: 40px;
+    background-color: skyblue;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 70%;
+    height: 70%;
+    background-color: skyblue;
+    text-align: center;
+    font-size: 60px;
+
+    border:solid 3px white;
+    border-radius:100px;
+
+    -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 4s;
+}
+
+#startButton:hover {
+  background-color: pink;
+  width: 98%;
+  height: 90%;
+}
+
+#quiz{
+  margin: 40px;
+  color: black;
+  font-size: 23px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.mainButton{
+    position:sticky;
+    left: 30%;
+    width: 40%;
+    height: 50%;
+
+    padding:30px;
+    margin:20px;
+
+    background-color: skyblue;
+    text-align: center;
+    font-size: 35px;
+    border:solid 3px white;
+    border-radius:50px;
+  }
+
+.main{
+    color:white;
+    font-size:45px;
+    text-align:center;
+
+    border:solid 3px green;
+    background-color:green;
+
+}

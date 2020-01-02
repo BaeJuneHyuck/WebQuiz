@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Make Quiz </title>
+    <link rel ="stylesheet" type = "text/css" href="MakeQuiz.css" >
+  </head>
+  <body>
+
+<div>
+  <button onclick="location.href='main.html'" type="button" class="mainButton">
+  메인으로</button><div>
+    <div class="split left">
+      <div class="centered">
+        <h1>객관식 문제를 직접 만들어 서버에 저장합니다.</h1>
+        <form method = "post" action = "MakeQuiz.php">
+          <p>문제: <textarea name = "question" rows="3" cols="36" class="textbox" placeholder = "3줄 이상일시 overflow:scroll적용"></textarea></p>
+          <p> (a): <input type="text" name = "answer1"></p>
+          <p> (b): <input type="text" name = "answer2"></p>
+          <p> (c): <input type="text" name = "answer3"></p>
+          <p> (d): <input type="text" name = "answer4"></p>
+          <p>정답: <input type ="text" name = "correct" placeholder = "c OR a,b 처럼입력"></p>
+          <input type = "submit" name ="save" value = "저장">
+        </form>
+      </div>
+    </div>
+
+    <div class="split right">
+      <div class="centered">
+        <h1>주관식 문제를 직접 만들어 서버에 저장합니다.</h1>
+        <form method = "post" action = "MakeQuiz.php">
+          <p>문제: <textarea name = "question" rows="3" cols="36" class="textbox" placeholder = "3줄 이상일시 overflow:scroll적용"></textarea></p>
+          <p>정답: <input type ="text" name = "correct" placeholder = "답을 입력해주세요"></p>
+          <input type = "submit" name ="save" value = "저장">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

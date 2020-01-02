@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+201424465 배준혁. 인터넷 시험의 구현
+
+(1) 주관식 문제를 내는 부분을 완성, 문제를 낸 것을 볼 수 있어야 한다.
+(2) 객관식 문제를 내는 부분을 완성, 문제를 낸 것을 볼 수 있어야 한다.
+(3) 무작위로 문제를 뽑아서 시험을 칠 수 있게 한다. 단, 여기서는 3-4문제만 칠 수 있게 한다. 문제의 반은 주관식, 반은 객관식이다. (15)
+(4) 채점 결과를 보여준다(15)
+
+1,2번은 MakeQuiz.html을 통해서 수행가능. 주관식, 객관식 단일답, 객관식 복수정답의 3종류 문제가 존재
+   문제등록 textarea는 3줄 이상 입력될시 자동으로 scroll되는기능 사용됨
+3번은 Quiz.php를 통하여 문제풀기가능. 문제 갯수를 입력하면 자동으로 문제가 섞여서 제출됨
+4번은 Quiz.php에서 마지막 문제를 풀면 자동으로 채점. 자신이 입력한 답의 색깔로 개별문제 채점 확인가능하며
+표 밑에서 전체점수를 확인가능. 서버에 점수를 제출하여 결과 확인가능
+-->
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Welcome to Quiz world</title>
+      <link rel ="stylesheet" type = "text/css" href="Quiz.css" >
+   </head>
+   <body>
+
+      <div class="main"> Wlecome to Quiz World!</div>
+      <button onclick="location.href='Quiz.php'" type="button" class="mainButton">
+      퀴즈 풀기</button><br>
+      <button onclick="location.href='QuizList.php'" type="button" class="mainButton">
+      문제 목록/추가</button><br>
+      <button onclick="location.href='QuizSubmit.php'" type="button" class="mainButton">
+      점수 확인</button>
+   </body>
+</html>
